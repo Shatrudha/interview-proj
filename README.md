@@ -1,16 +1,47 @@
-# React + Vite
+# 💰 Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+A clean and interactive finance dashboard built to track financial activity, visualize spending patterns, and manage transactions with role-based access.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 📊 Dashboard Overview
+- Total Balance, Income, Expenses cards
+- Line chart (financial trend)
+- Pie chart (category breakdown)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 💳 Transactions
+- View all transactions
+- Search/filter by category
+- Add / Edit / Delete transactions (Admin only)
 
-## Expanding the ESLint configuration
+### 🔐 Role-Based UI
+- Viewer → Read-only access
+- Admin → Can add, edit, delete transactions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📈 Insights
+- Highest spending category
+- Basic expense analysis
+
+### 🌙 Extra Features
+- Dark Mode toggle
+- Data persistence using LocalStorage
+- Responsive UI
+
+---
+
+## 🛠 Tech Stack
+- React (Vite)
+- Tailwind CSS
+- Recharts
+- Context API (State Management)
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+npm install
+npm run dev

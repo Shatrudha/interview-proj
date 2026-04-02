@@ -6,13 +6,15 @@ const Insights = () => {
 
   const expenses = transactions.filter(t => t.type === "expense");
 
-  const categoryTotals = {};
+  if (expenses.length === 0) return <p>No data</p>;
+
+  const totals = {};
   expenses.forEach(t => {
-    categoryTotals[t.category] = (categoryTotals[t.category] || 0) + t.amount;
+    totals[t.category] = (totals[t.category] || 0) + t.amount;
   });
 
-  const highest = Object.keys(categoryTotals).reduce((a, b) =>
-    categoryTotals[a] > categoryTotals[b] ? a : b
+  const highest = Object.keys(totals).reduce((a, b) =>
+    totals[a] > totals[b] ? a : b
   );
 
   return (
